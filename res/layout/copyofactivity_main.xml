@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+       <ToggleButton
+        android:id="@+id/tTamborim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="74dp"
+        android:onClick="clkTamborim"
+        android:textOff="Tamborim off"
+        android:textOn="Tamborim on" />
+       
+    <ToggleButton
+        android:id="@+id/tAgogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tTamborim"
+        android:layout_alignBottom="@+id/tTamborim"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tTamborim"
+        android:onClick="clkAgogo"
+        android:textOn="Agogo on"
+    	android:textOff="Agogo off" />
+
+    <ToggleButton
+        android:id="@+id/tCuica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tTamborim"
+        android:layout_below="@+id/tTamborim"
+        android:layout_marginTop="74dp"
+        android:onClick="clkCuica"
+        android:textOn="Cuica on"
+    	android:textOff="Cuica off" />
+
+    <ToggleButton
+        android:id="@+id/tRepique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tCuica"
+        android:layout_below="@+id/tTamborim"
+        android:layout_marginTop="74dp"
+        android:onClick="clkRepique"
+        android:textOn="Repique on"
+    	android:textOff="Repique off" />
+    
+    <ToggleButton
+        android:id="@+id/tCaixa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tCuica"
+        android:layout_below="@+id/tCuica"
+        android:layout_marginTop="74dp"
+        android:onClick="clkCaixa"
+        android:textOn="Caixa on"
+    	android:textOff="Caixa off" />
+    
+    <ToggleButton
+        android:id="@+id/tChocalho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tCaixa"
+        android:layout_below="@+id/tCuica"
+        android:layout_marginTop="74dp"
+        android:onClick="clkChocalho"
+        android:textOn="Chocalho on"
+    	android:textOff="Chocalho off" />
+
+    <Button
+        android:id="@+id/btnParar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ff0000"
+        android:onClick="clkStop"
+        android:text="Stop All"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tAgogo"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/tamborim" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/tAgogo"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tAgogo"
+        android:src="@drawable/agogo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/tCuica"
+        android:layout_below="@+id/tTamborim"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/cuica" />
+    
+</RelativeLayout>

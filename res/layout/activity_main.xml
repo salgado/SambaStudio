@@ -1,0 +1,198 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+    android:stretchColumns="0,1"
+    android:background="#fff"
+    tools:context=".MainActivity" >
+
+    <!-- 2 columns -->
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:paddingTop="0dp" >
+     
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="140dp"
+            android:layout_height="70dp"
+            android:padding="0dp"
+            android:src="@drawable/tamborim" />
+        
+        <ImageView
+        android:id="@+id/imageView2"
+        android:layout_height="70dp"
+        android:src="@drawable/agogo" />
+        
+       
+    </TableRow>
+ 	
+ 	<!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp" >
+     
+       <ToggleButton
+           android:id="@+id/tTamborim"
+           android:background="#000"
+           android:minHeight="24dp"
+           android:onClick="clkTamborim"
+           android:padding="0dp"
+           android:textColor="#fff"
+           android:textOff="Tamborim off"
+           android:textOn="ON" />
+
+    <ToggleButton
+        android:background="#000"
+        android:minHeight="24dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/tAgogo"
+        android:onClick="clkAgogo"
+        android:textOn="ON"
+    	android:textOff="Agogo off" />
+
+    </TableRow>
+    
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+     
+        <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="100dp"
+	        android:layout_height="70dp"
+        	android:src="@drawable/cuica" />
+        
+        <ImageView
+        android:id="@+id/imageView2"
+        android:layout_height="70dp"
+        android:src="@drawable/repique" />
+        
+       
+    </TableRow>
+ 	
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+	        
+	    <ToggleButton
+	        android:background="#000"
+	        android:minHeight="24dp"
+	        android:textColor="#fff"
+	        android:id="@+id/tCuica"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="clkCuica"
+	        android:textOn="ON"
+	    	android:textOff="Cuica off" />
+	
+	    <ToggleButton
+	        android:background="#000"
+	        android:minHeight="24dp"
+	        android:textColor="#fff"
+	        android:layout_marginLeft="8dp"
+	        android:id="@+id/tRepique"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="clkRepique"
+	        android:textOn="ON"
+	    	android:textOff="Repique off" />
+	   
+    </TableRow>
+    
+    
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+     
+        <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="100dp"
+	        android:layout_height="70dp"
+        	android:src="@drawable/caixa" />
+        
+        <ImageView
+        android:id="@+id/imageView2"
+        android:layout_height="70dp"
+        android:src="@drawable/chocalho" />
+        
+       
+    </TableRow>
+    
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+        
+    <ToggleButton
+        android:background="#000"
+        android:minHeight="24dp"
+        android:textColor="#fff"
+        android:id="@+id/tCaixa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clkCaixa"
+        android:textOn="ON"
+    	android:textOff="Caixa off" />
+    
+    <ToggleButton
+        android:background="#000"
+        android:minHeight="24dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="8dp"
+	    android:id="@+id/tChocalho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clkChocalho"
+        android:textOn="ON"
+    	android:textOff="Chocalho off" />
+   
+    </TableRow>
+    
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+    
+    <Button
+        android:minHeight="30dp"
+        android:id="@+id/btnParar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_span="2"
+        android:background="#ff0000"
+        android:onClick="clkStop"
+        android:text="Stop All"
+        android:layout_marginTop="15dp"
+        android:padding="8dp"
+        android:textColor="#ffffff" />
+
+	</TableRow>
+    
+</TableLayout>
